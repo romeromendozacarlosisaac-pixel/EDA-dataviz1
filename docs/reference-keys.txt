@@ -2,7 +2,7 @@ fig:nice-fig
 tab:nice-tab
 eq:binom
 thm:tri
-about
+primera-1
 usage
 render-book
 preview-book
