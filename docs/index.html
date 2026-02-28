@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>A Minimal Book Example</title>
+  <title>Análisis exploratorio de datos de un mercado: Estudio de las acciones historicas de Microsoft</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="A Minimal Book Example" />
+  <meta property="og:title" content="Análisis exploratorio de datos de un mercado: Estudio de las acciones historicas de Microsoft" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,17 +19,17 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="A Minimal Book Example" />
+  <meta name="twitter:title" content="Análisis exploratorio de datos de un mercado: Estudio de las acciones historicas de Microsoft" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   
 
-<meta name="author" content="John Doe" />
+<meta name="author" content="Carlos Romero y Paula Gómez" />
 
 
-<meta name="date" content="2026-02-24" />
+<meta name="date" content="2026-02-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -37,7 +37,7 @@ set in the _output.yml file.</p>" />
   
   
 
-<link rel="next" href="hello-bookdown.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -129,29 +129,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 </style>
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -169,35 +146,16 @@ div.csl-indent {
 <li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Primera 1</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="#introducci%C3%B3n-y-contexto"><i class="fa fa-check"></i><b>1</b> Introducción y Contexto</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#usage"><i class="fa fa-check"></i><b>1.1</b> Usage</a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#render-book"><i class="fa fa-check"></i><b>1.2</b> Render book</a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#preview-book"><i class="fa fa-check"></i><b>1.3</b> Preview book</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="#descripci%C3%B3n-de-los-datos"><i class="fa fa-check"></i><b>1.1</b> Descripción de los datos</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="#an%C3%A1lisis-preliminar"><i class="fa fa-check"></i><b>1.2</b> Análisis Preliminar</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="#an%C3%A1lisis-de-variables"><i class="fa fa-check"></i><b>1.3</b> Análisis de variables</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="#close"><i class="fa fa-check"></i><b>1.3.1</b> Close</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="#retornos"><i class="fa fa-check"></i><b>1.3.2</b> Retornos</a></li>
+<li class="chapter" data-level="1.3.3" data-path="index.html"><a href="#volatibilidad-historica-empleando-rolling-std"><i class="fa fa-check"></i><b>1.3.3</b> Volatibilidad Historica (Empleando Rolling STD)</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="hello-bookdown.html"><a href="hello-bookdown.html"><i class="fa fa-check"></i><b>2</b> Hello bookdown</a>
-<ul>
-<li class="chapter" data-level="2.1" data-path="hello-bookdown.html"><a href="hello-bookdown.html#a-section"><i class="fa fa-check"></i><b>2.1</b> A section</a>
-<ul>
-<li class="chapter" data-level="" data-path="hello-bookdown.html"><a href="hello-bookdown.html#an-unnumbered-section"><i class="fa fa-check"></i>An unnumbered section</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="cross.html"><a href="cross.html"><i class="fa fa-check"></i><b>3</b> Cross-references</a>
-<ul>
-<li class="chapter" data-level="3.1" data-path="cross.html"><a href="cross.html#chapters-and-sub-chapters"><i class="fa fa-check"></i><b>3.1</b> Chapters and sub-chapters</a></li>
-<li class="chapter" data-level="3.2" data-path="cross.html"><a href="cross.html#captioned-figures-and-tables"><i class="fa fa-check"></i><b>3.2</b> Captioned figures and tables</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="parts.html"><a href="parts.html"><i class="fa fa-check"></i><b>4</b> Parts</a></li>
-<li class="chapter" data-level="5" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html"><i class="fa fa-check"></i><b>5</b> Footnotes and citations</a>
-<ul>
-<li class="chapter" data-level="5.1" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#footnotes"><i class="fa fa-check"></i><b>5.1</b> Footnotes</a></li>
-<li class="chapter" data-level="5.2" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#citations"><i class="fa fa-check"></i><b>5.2</b> Citations</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="blocks.html"><a href="blocks.html"><i class="fa fa-check"></i><b>6</b> Blocks</a>
-<ul>
-<li class="chapter" data-level="6.1" data-path="blocks.html"><a href="blocks.html#equations"><i class="fa fa-check"></i><b>6.1</b> Equations</a></li>
-<li class="chapter" data-level="6.2" data-path="blocks.html"><a href="blocks.html#theorems-and-proofs"><i class="fa fa-check"></i><b>6.2</b> Theorems and proofs</a></li>
-<li class="chapter" data-level="6.3" data-path="blocks.html"><a href="blocks.html#callout-blocks"><i class="fa fa-check"></i><b>6.3</b> Callout blocks</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -211,7 +169,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Análisis exploratorio de datos de un mercado: Estudio de las acciones historicas de Microsoft</a>
           </h1>
         </div>
 
@@ -220,35 +178,368 @@ div.csl-indent {
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">A Minimal Book Example</h1>
-<p class="author"><em>John Doe</em></p>
-<p class="date"><em>2026-02-24</em></p>
+<h1 class="title">Análisis exploratorio de datos de un mercado: Estudio de las acciones historicas de Microsoft</h1>
+<p class="author"><em>Carlos Romero y Paula Gómez</em></p>
+<p class="date"><em>2026-02-28</em></p>
 </div>
-<div id="primera-1" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Primera 1<a href="index.html#primera-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This is a <em>sample</em> book written in <strong>Markdown</strong>. You can use anything that Pandoc’s Markdown supports; for example, a math equation <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
-<div id="usage" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> Usage<a href="index.html#usage" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Each <strong>bookdown</strong> chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter <em>must</em> start with a first-level heading: <code># A good chapter</code>, and can contain one (and only one) first-level heading.</p>
-<p>Use second-level and higher headings within chapters like: <code>## A short section</code> or <code>### An even shorter section</code>.</p>
-<p>The <code>index.Rmd</code> file is required, and is also your first book chapter. It will be the homepage when you render the book.</p>
+<div id="introducción-y-contexto" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Introducción y Contexto<a href="#introducci%C3%B3n-y-contexto" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>El presente Análisis Exploratorio de Datos (EDA) tiene como objetivo estudiar el comportamiento histórico de los precios de las acciones de Microsoft a partir de un conjunto de datos diarios que incluye variables como los precios de apertura, máximo, mínimo y cierre ajustado, así como el volumen de negociación. Este análisis se enmarca dentro del estudio de series de tiempo financieras, donde el interés principal radica en comprender cómo evolucionan los precios de una acción a lo largo del tiempo y qué patrones pueden identificarse en dicha evolución.</p>
+<p>Ees examinar el comportamiento histórico del precio de la acción de Microsoft (MSFT), identificar patrones temporales, evaluar su estructura estadística y analizar la dinámica de la volatilidad a lo largo del período 2000–2026. A través de este análisis exploratorio se busca describir estadísticamente las variables del conjunto de datos y visualizar su evolución temporal, con un enfoque en el histórico temporal (Cierre y Fecha). Esto permitirá obtener una comprensión inicial del comportamiento de la acción y servirá como base para análisis posteriores más avanzados, como la modelación de series de tiempo o la predicción de precios.</p>
+<p>El propósito principal de este estudio es analizar la dinámica temporal del precio de la acción para caracterizar su comportamiento mediante métricas fundamentales en finanzas cuantitativas, especialmente el retorno y la volatilidad.Este estudio será realizado en distintas ventanas temporales para analizar de forma más precisa la variación de estos valores a lo largo del tiempo, además de identificar tendencias y patrones en los distintos periodos.</p>
+<p>Este enfoque permitirá obtener una visión clara y estructurada del comportamiento histórico de la acción, proporcionando una base sólida para interpretar la evolución de su precio en distintos periodos de tiempo.</p>
+<div id="descripción-de-los-datos" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Descripción de los datos<a href="#descripci%C3%B3n-de-los-datos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>El dataset utilizado contiene el seguimiento historico del precio en dólares (USD) de las acciones de Microsoft en Nasdaq, desde el 3 de Enero del año 2000, hasta la fecha de 27 de Febrero de 2026. Cabe resaltar que los precios mostrados por el dataset están ajustados según la inflación, para facilitar la interpretación.</p>
+<ul>
+<li>Fuente: Nasdaq</li>
+<li>Frecuencia: Diaria</li>
+<li>Variables Clave: Fecha (Date) y Precio de cierre diario (Close)</li>
+</ul>
 </div>
-<div id="render-book" class="section level2 hasAnchor" number="1.2">
-<h2><span class="header-section-number">1.2</span> Render book<a href="index.html#render-book" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>You can render the HTML version of this example book without changing anything:</p>
-<ol style="list-style-type: decimal">
-<li><p>Find the <strong>Build</strong> pane in the RStudio IDE, and</p></li>
-<li><p>Click on <strong>Build Book</strong>, then select your output format, or select “All formats” if you’d like to use multiple formats from the same book source files.</p></li>
-</ol>
-<p>Or build the book from the R console:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" tabindex="-1"></a>bookdown<span class="sc">::</span><span class="fu">render_book</span>()</span></code></pre></div>
-<p>To render this example to PDF as a <code>bookdown::pdf_book</code>, you’ll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.org/tinytex/" class="uri">https://yihui.org/tinytex/</a>.</p>
+<div id="análisis-preliminar" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Análisis Preliminar<a href="#an%C3%A1lisis-preliminar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Incialmente se debe realizar una inspección general sobre el dataset seleccionado:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="co">#Dimensiones del dataset</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">dim</span>(MSFT)</span></code></pre></div>
+<pre><code>## [1] 6578    6</code></pre>
+<p>Al comprobar las dimensiones del dataset, encontramos que este cuenta con 6578 observaciones caracterizadas por 6 variables. Analizemos las variables:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">str</span>(MSFT)</span></code></pre></div>
+<pre><code>## &#39;data.frame&#39;:    6578 obs. of  6 variables:
+##  $ Date  : Date, format: &quot;2000-01-03&quot; &quot;2000-01-04&quot; ...
+##  $ Close : num  35.5 34.3 34.7 33.5 34 ...
+##  $ High  : num  36.1 35.7 35.5 34.7 34.2 ...
+##  $ Low   : num  34.1 34.2 33.3 33 32.7 ...
+##  $ Open  : num  35.8 34.6 33.9 34.2 33.1 ...
+##  $ Volume: num  53228400 54119000 64059600 54976600 62013600 ...</code></pre>
+<ul>
+<li><p>Date: La variable Date especifica la fecha de trading, es decir, el día de movimiento de las acciones, este se encuentra en formato Date, lo que indica que está almacenada como una fecha calendario y no como texto.</p></li>
+<li><p>Close: Variable númerica que indica el precio con el que la acción terminó la fecha.</p></li>
+<li><p>High: Variable númerica que indica el precio más alto que alcanzó la acción durante la fecha.</p></li>
+<li><p>Low: Variable númerica que indica el precio más bajo al que llegó la acción durante la fecha.</p></li>
+<li><p>Open: Variable númerica que indica el precio con el que la acción inició la fecha.</p></li>
+<li><p>Volume: Variable númerica que indica la cantidad de acciones negociadas durante la fecha.</p></li>
+</ul>
+<p>Para el análisis que se realizará el enfoque se encuentra en el precio de cierre (Close) y en la Fecha (Date). Una vez explicado esto, es necesaria una revisión a los primeros y últimos registros para verificar la coherencia temporal.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="co">#Primeros 10 datos</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="fu">head</span>(MSFT, <span class="dv">10</span>)</span></code></pre></div>
+<pre><code>##          Date    Close     High      Low     Open   Volume
+## 1  2000-01-03 35.52039 36.14890 34.13004 35.76798 53228400
+## 2  2000-01-04 34.32050 35.69180 34.20623 34.60619 54119000
+## 3  2000-01-05 34.68235 35.46322 33.33010 33.86338 64059600
+## 4  2000-01-06 33.52058 34.70141 33.02539 34.18718 54976600
+## 5  2000-01-07 33.95862 34.20622 32.70160 33.10156 62013600
+## 6  2000-01-10 34.20622 34.64427 33.93958 34.56809 44963600
+## 7  2000-01-11 33.33012 34.81569 33.12061 33.97767 46743600
+## 8  2000-01-12 32.24451 33.17775 31.82550 33.06348 66532400
+## 9  2000-01-13 32.85398 33.10157 30.93035 31.80646 83144000
+## 10 2000-01-14 34.20622 34.72045 32.22546 32.66351 73416400</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="co">#Últimos 10 datos</span></span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="fu">tail</span>(MSFT, <span class="dv">10</span>)</span></code></pre></div>
+<pre><code>##            Date    Close     High      Low     Open   Volume
+## 6569 2026-02-13 400.4061 404.6165 397.1435 403.5290 34091600
+## 6570 2026-02-17 395.9562 399.6079 393.6316 398.3109 32078800
+## 6571 2026-02-18 398.6900 401.6433 395.4175 397.2233 23223400
+## 6572 2026-02-19 398.4600 404.4300 396.6700 400.6900 28234000
+## 6573 2026-02-20 397.2300 400.1200 395.1600 396.1100 34015200
+## 6574 2026-02-23 384.4700 395.3600 383.1000 395.0000 43238300
+## 6575 2026-02-24 389.0000 389.3600 381.7100 384.1400 33884700
+## 6576 2026-02-25 400.6000 401.4700 390.1600 390.5300 43625500
+## 6577 2026-02-26 401.7200 407.4900 398.7400 404.7100 34283500
+## 6578 2026-02-27 393.3999 396.8000 390.0000 390.9925 19204372</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="co">#Verifica si Date se encuentra correctamente ordenada</span></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="fu">is.unsorted</span>(MSFT<span class="sc">$</span>Date)</span></code></pre></div>
+<pre><code>## [1] FALSE</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="co">#Verifica que no se repitan fechas</span></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">duplicated</span>(MSFT<span class="sc">$</span>Date))</span></code></pre></div>
+<pre><code>## [1] 0</code></pre>
+<p>Es importante resaltar que este dataset tiene en cuenta únicamente los días búrsatiles, es decir, los periodos de tiempo en los cuales la bolsa de valores se mantiene abierta, por tanto solo está teniendo en cuenta los primeros 5 días de cada semana, sin contar días de semana o días festivos, una vez tenido en cuenta esto, se puede observar que la coherencia temporal se mantiene desde los primeros hasta los últimos registros, sumado a la validación hecha por la función is.unsorted() nos muestra que las fechas están en orden y además ninguna se repite.</p>
+<p>El siguiente paso es la verificación de valores faltantes:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="co">#Visualización de datos faltantes NA</span></span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a><span class="fu">missmap</span>(MSFT)</span></code></pre></div>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+En este caso no se encuentran valores faltantes dentro del dataset, por lo cual se puede continuar sin problemas con el análisis.</p>
+<p>Una vez comprobado todo esto, hay que pasar a la construcción del retorno y la volatibilidad dentro del dataset, el retorno mide a variación porcentual del precio de un activo entre dos períodos consecutivos, para este análisis, se utilizará la fórmula del retorno logarítmico, usualmente empleada en campos financieros:</p>
+<p><span class="math display">\[
+r_t = \ln\left(\frac{P_t}{P_{t-1}}\right)
+\]</span>
+Donde <span class="math inline">\(P_t\)</span> es el precio de cierre (Close) en el día <span class="math inline">\(t\)</span>. Por consiguiente, empleando esta fórmula, se añadirá una nueva columna al dataset que contenga esta variable para cada día, exceptuando el primero:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="co">#Calculo del retorno logaritmico</span></span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a>MSFT<span class="sc">$</span>Return <span class="ot">&lt;-</span> <span class="fu">log</span>(MSFT<span class="sc">$</span>Close <span class="sc">/</span> <span class="fu">lag</span>(MSFT<span class="sc">$</span>Close))</span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a><span class="co">#Visualizacion del cambio en el dataset</span></span>
+<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a><span class="fu">head</span>(MSFT, <span class="dv">10</span>)</span></code></pre></div>
+<pre><code>##          Date    Close     High      Low     Open   Volume       Return
+## 1  2000-01-03 35.52039 36.14890 34.13004 35.76798 53228400           NA
+## 2  2000-01-04 34.32050 35.69180 34.20623 34.60619 54119000 -0.034363840
+## 3  2000-01-05 34.68235 35.46322 33.33010 33.86338 64059600  0.010487869
+## 4  2000-01-06 33.52058 34.70141 33.02539 34.18718 54976600 -0.034071333
+## 5  2000-01-07 33.95862 34.20622 32.70160 33.10156 62013600  0.012983309
+## 6  2000-01-10 34.20622 34.64427 33.93958 34.56809 44963600  0.007264679
+## 7  2000-01-11 33.33012 34.81569 33.12061 33.97767 46743600 -0.025946081
+## 8  2000-01-12 32.24451 33.17775 31.82550 33.06348 66532400 -0.033113683
+## 9  2000-01-13 32.85398 33.10157 30.93035 31.80646 83144000  0.018725111
+## 10 2000-01-14 34.20622 34.72045 32.22546 32.66351 73416400  0.040334652</code></pre>
+<p>El retorno diario ya se encuentra calculado para el dataset, excepto para la primera fecha, ya que no hay un día anterior a este. Luego está el cáclulo de la volatibilidad histórica, esta se define como la desviación estándar de los retornos y constituye una medida estadística del riesgo del activo, que mide el grado de variabilidad o dispersión de los retornos de un activo en el tiempo, una mayor volatilidad implica mayor incertidumbre y variabilidad en los rendimientos. Para este caso, se trabajará la volatibilidad historica sobre distintas ventanas móviles en lugar de un solo periodo de tiempo, para eso se utilizará el <span class="math inline">\(Rolling\)</span> <span class="math inline">\(Standard\)</span> <span class="math inline">\(Deviation\)</span>, que es la volatibilidad (Desviación estandar), calculada sobre una ventana móvil de tamaño fijo:</p>
+<p><span class="math display">\[
+\sigma = \sqrt{\frac{1}{n-1} \sum_{t=1}^{n} (r_t - \bar{r})^2}
+\]</span>
+Donde:</p>
+<ul>
+<li><span class="math inline">\(r_t\)</span> es el retorno en el periodo <span class="math inline">\(t\)</span>.</li>
+<li><span class="math inline">\(\bar{r}\)</span> es el retorno medio.</li>
+<li><span class="math inline">\(n\)</span> es el número de observaciones por ventana.</li>
+</ul>
+<p>Es importante mencionar, que estas variables deben ser analizadas en distintas ventanas de tiempo, para obtener una comprensión más clara sobre el comportamiento de estas variables en distintos periodos. Una vez establecido esto, se puede proceder al análisis de las variables.</p>
 </div>
-<div id="preview-book" class="section level2 hasAnchor" number="1.3">
-<h2><span class="header-section-number">1.3</span> Preview book<a href="index.html#preview-book" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in “Preview book”, or from the R console:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="index.html#cb2-1" tabindex="-1"></a>bookdown<span class="sc">::</span><span class="fu">serve_book</span>()</span></code></pre></div>
+<div id="análisis-de-variables" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Análisis de variables<a href="#an%C3%A1lisis-de-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="close" class="section level3 hasAnchor" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> Close<a href="#close" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Empezaremos con el análisis sobre la variable Close:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="co">#Resumen de estadisticas descriptivas de la variable close</span></span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a><span class="fu">summary</span>(MSFT<span class="sc">$</span>Close)</span></code></pre></div>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   11.11   18.99   25.98  101.01  129.12  539.83</code></pre>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="co">#Rango intercuartilico</span></span>
+<span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a><span class="fu">IQR</span>(MSFT<span class="sc">$</span>Close)</span></code></pre></div>
+<pre><code>## [1] 110.1356</code></pre>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="co">#Desviación estandar</span></span>
+<span id="cb20-2"><a href="#cb20-2" tabindex="-1"></a><span class="fu">sd</span>(MSFT<span class="sc">$</span>Close)</span></code></pre></div>
+<pre><code>## [1] 132.5593</code></pre>
+<p>Se observa que el precio de cierrre presenta un valor mínimo hístorico 11.11 USD y un Máximo de 539.83 USD, junto con una desviación estandar bastante elevada, esto representa un primer indicio de un crecimiento sustancial a lo largo del periodo analizado. Otra evidencia de esto es que el precio de cierre medio (101.01) se encuentra bastante alejado de la mediana (25.98), lo que sugiere una distribución asimétrica positiva, consistente con la tendencia creciente en el largo plazo. Por último, el rango intercuartílico (132.56) indica que el 50% central de los precios se concentra en un intervalo relativamente amplio, reflejando variaciones significativas en los niveles de cotización a lo largo del tiempo.</p>
+<p>Antes de pasar a la visualización, es necesario explorar dos variables más que se construyen a partir del precio de cierre (Close), se trata del retorno y la volatibilidad, ya que estás son mucho más representativas a la hora de medir rentabilidad y riesgo real.</p>
+<p>Ahora para visualizar el comportamiento de la variable a lo largo de los años en una frecuencia diaria, se observa lo siguiente:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="fu">ggplot</span>(MSFT, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Close)) <span class="sc">+</span></span>
+<span id="cb22-2"><a href="#cb22-2" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">&quot;steelblue&quot;</span>, <span class="at">linewidth =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb22-3"><a href="#cb22-3" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_breaks =</span> <span class="st">&quot;4 year&quot;</span>, <span class="at">date_labels =</span> <span class="st">&quot;%Y&quot;</span>) <span class="sc">+</span></span>
+<span id="cb22-4"><a href="#cb22-4" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb22-5"><a href="#cb22-5" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;Precio de cierre diario (USD) - Microsoft&quot;</span>,</span>
+<span id="cb22-6"><a href="#cb22-6" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Año&quot;</span>,</span>
+<span id="cb22-7"><a href="#cb22-7" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Precio de cierre (USD)&quot;</span></span>
+<span id="cb22-8"><a href="#cb22-8" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb22-9"><a href="#cb22-9" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+Como se había considerado anteriormente, se puede observar un movimiento ascendente, mostrando una tendencia general causada por el aumento de los precios de las acciones de Microsoft durante los últimos años, marcado desde 2013-2014, se ha dado un crecimiento acelerado en el valor. También se observan episodios de caídas significativas y correcciones temporales, como en periodos de alta incertidumbre del mercado, lo que evidencia que, aunque la tendencia general es alcista, el activo experimenta fases de alta volatilidad.</p>
+<p>Durante los primeros años (2000–2010), el precio se mantiene relativamente estable, con fluctuaciones moderadas y sin una tendencia pronunciada. Posteriormente, se identifica un cambio estructural en la dinámica del activo, caracterizado por un crecimiento acelerado que lleva el precio desde niveles cercanos a 30–40 USD hasta superar los 500 USD en años recientes.</p>
+<p>Desde el punto de vista estadístico, la serie en niveles no parece estacionaria, ya que presenta una tendencia clara y cambios en la varianza a lo largo del tiempo. Esto justifica la necesidad de trabajar con retornos en lugar de precios para el análisis de volatilidad.</p>
+</div>
+<div id="retornos" class="section level3 hasAnchor" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> Retornos<a href="#retornos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Ahora pasemos con el análisis estadistico del retorno diario:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="fu">summary</span>(MSFT<span class="sc">$</span>Return)</span></code></pre></div>
+<pre><code>##       Min.    1st Qu.     Median       Mean    3rd Qu.       Max.       NA&#39;s 
+## -0.1695765 -0.0080856  0.0003792  0.0003656  0.0092829  0.1786917          1</code></pre>
+<p>El promedio de retornos diario 0.0003656 y la mediana 0.0003792 indican que el activo tiene un retorno promedio positivo, es decir, se genera un porcentaje de ganancia, además de esto, la cerccanía de la media y la mediana indican una distribución bastante centrada, esto se analizará más a fondo empleando un histograma para el retorno. El rango intercuartílico indica que la mayoría de las variaciones diarias se concentran en torno a ±1%, lo que refleja un comportamiento relativamente estable en condiciones normales de mercado. Sin embargo, los valores extremos muestran la existencia de movimientos diarios superiores al 15% en magnitud, evidenciando episodios de alta volatilidad, momentos como la pandemia causada por el COVID-19 durante los años 2020 a 2022, y la posible presencia de colas pesadas en la distribución.</p>
+<p>Para la visualización, realizaremos un gráfico de linea para los retornos y un histograma de los retornos diarios:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" tabindex="-1"></a><span class="fu">ggplot</span>(MSFT, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Return)) <span class="sc">+</span></span>
+<span id="cb25-2"><a href="#cb25-2" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">&quot;steelblue&quot;</span>, <span class="at">linewidth =</span> <span class="fl">0.5</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb25-3"><a href="#cb25-3" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_breaks =</span> <span class="st">&quot;4 year&quot;</span>, <span class="at">date_labels =</span> <span class="st">&quot;%Y&quot;</span>) <span class="sc">+</span></span>
+<span id="cb25-4"><a href="#cb25-4" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb25-5"><a href="#cb25-5" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;Precio de cierre diario (USD) - Microsoft&quot;</span>,</span>
+<span id="cb25-6"><a href="#cb25-6" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Año&quot;</span>,</span>
+<span id="cb25-7"><a href="#cb25-7" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Precio de cierre (USD)&quot;</span></span>
+<span id="cb25-8"><a href="#cb25-8" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb25-9"><a href="#cb25-9" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Dentro del gráfico de línea se puede observar el comportamiento de los retornos a lo largo de los años haciendo mucho más fácil el seguimiento. Estos valores oscilan alrededor de 0 a lo largo de los años, exceptuando picos tanto positivos como negativos, por tanto se puede ver que no hay una tendencia clara en los retornos ni un patrón consistente. Se pueden notar algunos periodos donde se encuentran grandes picos consecutivos indicando eventos extremos que afectaron el valor de los retornos, se pueden ver en un periodo entre 2000 a 2002, otro de 2008 a 2009 aproximadamente, y uno más entre 2019 y 2020, por tanto se tendrán en cuenta durante el analisis de la volatibilidad.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" tabindex="-1"></a>media_ret <span class="ot">&lt;-</span> <span class="fu">mean</span>(MSFT<span class="sc">$</span>Return, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" tabindex="-1"></a>sd_ret    <span class="ot">&lt;-</span> <span class="fu">sd</span>(MSFT<span class="sc">$</span>Return, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb26-3"><a href="#cb26-3" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" tabindex="-1"></a><span class="fu">ggplot</span>(MSFT, <span class="fu">aes</span>(<span class="at">x =</span> Return)) <span class="sc">+</span></span>
+<span id="cb26-5"><a href="#cb26-5" tabindex="-1"></a>  </span>
+<span id="cb26-6"><a href="#cb26-6" tabindex="-1"></a>  <span class="co">#Histograma</span></span>
+<span id="cb26-7"><a href="#cb26-7" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">y =</span> ..density.., <span class="at">fill =</span> <span class="st">&quot;Retornos&quot;</span>),</span>
+<span id="cb26-8"><a href="#cb26-8" tabindex="-1"></a>                 <span class="at">bins =</span> <span class="dv">50</span>,</span>
+<span id="cb26-9"><a href="#cb26-9" tabindex="-1"></a>                 <span class="at">alpha =</span> <span class="fl">0.6</span>,</span>
+<span id="cb26-10"><a href="#cb26-10" tabindex="-1"></a>                 <span class="at">color =</span> <span class="st">&quot;black&quot;</span>,</span>
+<span id="cb26-11"><a href="#cb26-11" tabindex="-1"></a>                 <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb26-12"><a href="#cb26-12" tabindex="-1"></a>  </span>
+<span id="cb26-13"><a href="#cb26-13" tabindex="-1"></a>  <span class="co">#Curva normal </span></span>
+<span id="cb26-14"><a href="#cb26-14" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="fu">aes</span>(<span class="at">color =</span> <span class="st">&quot;Normal teórica&quot;</span>),</span>
+<span id="cb26-15"><a href="#cb26-15" tabindex="-1"></a>                <span class="at">fun =</span> dnorm,</span>
+<span id="cb26-16"><a href="#cb26-16" tabindex="-1"></a>                <span class="at">args =</span> <span class="fu">list</span>(<span class="at">mean =</span> media_ret,</span>
+<span id="cb26-17"><a href="#cb26-17" tabindex="-1"></a>                            <span class="at">sd =</span> sd_ret),</span>
+<span id="cb26-18"><a href="#cb26-18" tabindex="-1"></a>                <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb26-19"><a href="#cb26-19" tabindex="-1"></a>  </span>
+<span id="cb26-20"><a href="#cb26-20" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;Retornos&quot;</span> <span class="ot">=</span> <span class="st">&quot;steelblue&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb26-21"><a href="#cb26-21" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;Normal teórica&quot;</span> <span class="ot">=</span> <span class="st">&quot;red&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb26-22"><a href="#cb26-22" tabindex="-1"></a>  </span>
+<span id="cb26-23"><a href="#cb26-23" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Histograma de Retornos Diarios&quot;</span>,</span>
+<span id="cb26-24"><a href="#cb26-24" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Retorno&quot;</span>,</span>
+<span id="cb26-25"><a href="#cb26-25" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Densidad&quot;</span>,</span>
+<span id="cb26-26"><a href="#cb26-26" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb26-27"><a href="#cb26-27" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">&quot;&quot;</span>) <span class="sc">+</span></span>
+<span id="cb26-28"><a href="#cb26-28" tabindex="-1"></a>  </span>
+<span id="cb26-29"><a href="#cb26-29" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<pre><code>## Warning: The dot-dot notation (`..density..`) was deprecated in ggplot2 3.4.0.
+## ℹ Please use `after_stat(density)` instead.
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
+## generated.</code></pre>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>El histograma de los retornos diarios muestra una distribución aproximadamente simétrica y centrada en cero. La mayor parte de los retornos se concentra en torno a valores pequeños, lo cual es consistente con la dinámica típica de mercados financieros. No obstante, la comparación con la distribución normal evidencia colas más pesadas, lo que sugiere la presencia de leptocurtosis y una mayor probabilidad de eventos extremos en relación con la distribución normal teórica.</p>
+<p>Para confirmar la leptocurtosis se realizará rapidamente una prueba de kurtosis:</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" tabindex="-1"></a><span class="fu">kurtosis</span>(<span class="fu">na.omit</span>(MSFT<span class="sc">$</span>Return))</span></code></pre></div>
+<pre><code>## [1] 12.36415</code></pre>
+<p>Este resultado confirma la leptocurtosis, indicando colas pesadas.</p>
+</div>
+<div id="volatibilidad-historica-empleando-rolling-std" class="section level3 hasAnchor" number="1.3.3">
+<h3><span class="header-section-number">1.3.3</span> Volatibilidad Historica (Empleando Rolling STD)<a href="#volatibilidad-historica-empleando-rolling-std" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Para el estudio de la volatibilidad utilizando Rolling STD, se trabajará con 3 ventanas de tiempo distintas, una ventana de 20 días búrsatiles para la volatibilidad mensual, una ventana de 60 días búrsatiles para la voltabilidad trimestral y 252 días búrsatiles para la variabilidad anual. Para realizar este cálculo se hará uso de la librería zoo:</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" tabindex="-1"></a><span class="co">#Volatibilidad mensual (20 días)</span></span>
+<span id="cb30-2"><a href="#cb30-2" tabindex="-1"></a>MSFT<span class="sc">$</span>vol_20 <span class="ot">&lt;-</span> <span class="fu">rollapply</span>(</span>
+<span id="cb30-3"><a href="#cb30-3" tabindex="-1"></a>  MSFT<span class="sc">$</span>Return,</span>
+<span id="cb30-4"><a href="#cb30-4" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">20</span>,</span>
+<span id="cb30-5"><a href="#cb30-5" tabindex="-1"></a>  <span class="at">FUN =</span> sd,</span>
+<span id="cb30-6"><a href="#cb30-6" tabindex="-1"></a>  <span class="at">fill =</span> <span class="cn">NA</span>,</span>
+<span id="cb30-7"><a href="#cb30-7" tabindex="-1"></a>  <span class="at">align =</span> <span class="st">&quot;right&quot;</span></span>
+<span id="cb30-8"><a href="#cb30-8" tabindex="-1"></a>)</span>
+<span id="cb30-9"><a href="#cb30-9" tabindex="-1"></a></span>
+<span id="cb30-10"><a href="#cb30-10" tabindex="-1"></a><span class="fu">ggplot</span>(MSFT, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> vol_20)) <span class="sc">+</span></span>
+<span id="cb30-11"><a href="#cb30-11" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb30-12"><a href="#cb30-12" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Volatilidad Móvil (Ventana de 20 días)&quot;</span>,</span>
+<span id="cb30-13"><a href="#cb30-13" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Fecha&quot;</span>,</span>
+<span id="cb30-14"><a href="#cb30-14" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Volatilidad&quot;</span>) <span class="sc">+</span></span>
+<span id="cb30-15"><a href="#cb30-15" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a><span class="co">#Volatibilidad trimestral (60 días)</span></span>
+<span id="cb31-2"><a href="#cb31-2" tabindex="-1"></a>MSFT<span class="sc">$</span>vol_60 <span class="ot">&lt;-</span> <span class="fu">rollapply</span>(</span>
+<span id="cb31-3"><a href="#cb31-3" tabindex="-1"></a>  MSFT<span class="sc">$</span>Return,</span>
+<span id="cb31-4"><a href="#cb31-4" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">60</span>,</span>
+<span id="cb31-5"><a href="#cb31-5" tabindex="-1"></a>  <span class="at">FUN =</span> sd,</span>
+<span id="cb31-6"><a href="#cb31-6" tabindex="-1"></a>  <span class="at">fill =</span> <span class="cn">NA</span>,</span>
+<span id="cb31-7"><a href="#cb31-7" tabindex="-1"></a>  <span class="at">align =</span> <span class="st">&quot;right&quot;</span></span>
+<span id="cb31-8"><a href="#cb31-8" tabindex="-1"></a>)</span>
+<span id="cb31-9"><a href="#cb31-9" tabindex="-1"></a></span>
+<span id="cb31-10"><a href="#cb31-10" tabindex="-1"></a><span class="fu">ggplot</span>(MSFT, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> vol_60)) <span class="sc">+</span></span>
+<span id="cb31-11"><a href="#cb31-11" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb31-12"><a href="#cb31-12" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Volatilidad Móvil (Ventana de 60 días)&quot;</span>,</span>
+<span id="cb31-13"><a href="#cb31-13" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Fecha&quot;</span>,</span>
+<span id="cb31-14"><a href="#cb31-14" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Volatilidad&quot;</span>) <span class="sc">+</span></span>
+<span id="cb31-15"><a href="#cb31-15" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-12-2.png" width="672" /></p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" tabindex="-1"></a><span class="co">#Volatibilidad anual (252 días)</span></span>
+<span id="cb32-2"><a href="#cb32-2" tabindex="-1"></a>MSFT<span class="sc">$</span>vol_252 <span class="ot">&lt;-</span> <span class="fu">rollapply</span>(</span>
+<span id="cb32-3"><a href="#cb32-3" tabindex="-1"></a>  MSFT<span class="sc">$</span>Return,</span>
+<span id="cb32-4"><a href="#cb32-4" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">252</span>,</span>
+<span id="cb32-5"><a href="#cb32-5" tabindex="-1"></a>  <span class="at">FUN =</span> sd,</span>
+<span id="cb32-6"><a href="#cb32-6" tabindex="-1"></a>  <span class="at">fill =</span> <span class="cn">NA</span>,</span>
+<span id="cb32-7"><a href="#cb32-7" tabindex="-1"></a>  <span class="at">align =</span> <span class="st">&quot;right&quot;</span></span>
+<span id="cb32-8"><a href="#cb32-8" tabindex="-1"></a>)</span>
+<span id="cb32-9"><a href="#cb32-9" tabindex="-1"></a></span>
+<span id="cb32-10"><a href="#cb32-10" tabindex="-1"></a><span class="fu">ggplot</span>(MSFT, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> vol_252)) <span class="sc">+</span></span>
+<span id="cb32-11"><a href="#cb32-11" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb32-12"><a href="#cb32-12" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Volatilidad Móvil (Ventana de 252 días)&quot;</span>,</span>
+<span id="cb32-13"><a href="#cb32-13" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Fecha&quot;</span>,</span>
+<span id="cb32-14"><a href="#cb32-14" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Volatilidad&quot;</span>) <span class="sc">+</span></span>
+<span id="cb32-15"><a href="#cb32-15" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-12-3.png" width="672" /></p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" tabindex="-1"></a><span class="co">#Comparativo de las 3 volatibilidades</span></span>
+<span id="cb33-2"><a href="#cb33-2" tabindex="-1"></a></span>
+<span id="cb33-3"><a href="#cb33-3" tabindex="-1"></a><span class="fu">ggplot</span>(MSFT, <span class="fu">aes</span>(<span class="at">x =</span> Date)) <span class="sc">+</span></span>
+<span id="cb33-4"><a href="#cb33-4" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> vol_20, <span class="at">color =</span> <span class="st">&quot;20 días&quot;</span>) ,<span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb33-5"><a href="#cb33-5" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> vol_60, <span class="at">color =</span> <span class="st">&quot;60 días&quot;</span>), <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb33-6"><a href="#cb33-6" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> vol_252, <span class="at">color =</span> <span class="st">&quot;252 días&quot;</span>), <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb33-7"><a href="#cb33-7" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Comparación de Volatilidades Móviles&quot;</span>,</span>
+<span id="cb33-8"><a href="#cb33-8" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Fecha&quot;</span>,</span>
+<span id="cb33-9"><a href="#cb33-9" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Volatilidad&quot;</span>,</span>
+<span id="cb33-10"><a href="#cb33-10" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">&quot;Ventana&quot;</span>) <span class="sc">+</span></span>
+<span id="cb33-11"><a href="#cb33-11" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-12-4.png" width="672" /></p>
+<p>La volatilidad móvil permite observar la evolución temporal del riesgo del activo. Se evidencia la presencia de períodos de alta volatilidad concentrados en eventos específicos del mercado, seguidos de fases de menor variabilidad, lo que confirma la existencia de clustering de volatilidad, característica típica de series financieras. Se puede notar clustering de volatibilidad en periodos resaltados anteriormente, se observan varios picos de volatibilidad en el 2000, 2008-2009 y 2020. La ventana de volatibilidad mensual y trimestral registran un pico mucho más marcado en los últimos meses, y se muestran más cambios estructurales en la ventana anual, mostrando claramente la distribución de los momentos de mayor volatibilidad.</p>
+<p>##Análisis de componentes e identificación de patrones</p>
+<p>Es momento de dividir la serie en componentes para analizar tendencia, estacionalidad residuales, este proceso se hará sobre el precio de cierre utiilizando la tecnica STL (Seasonal-Trend), se hará con una frecuencia de 252 días, ya que se trabajará anualmente:</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" tabindex="-1"></a><span class="co">#Crear objeto ts</span></span>
+<span id="cb34-2"><a href="#cb34-2" tabindex="-1"></a>close_ts <span class="ot">&lt;-</span> <span class="fu">ts</span>(MSFT<span class="sc">$</span>Close,</span>
+<span id="cb34-3"><a href="#cb34-3" tabindex="-1"></a>               <span class="at">start =</span> <span class="fu">c</span>(<span class="fu">as.numeric</span>(<span class="fu">format</span>(<span class="fu">min</span>(MSFT<span class="sc">$</span>Date), <span class="st">&quot;%Y&quot;</span>)), <span class="dv">1</span>),</span>
+<span id="cb34-4"><a href="#cb34-4" tabindex="-1"></a>               <span class="at">frequency =</span> <span class="dv">252</span>)</span>
+<span id="cb34-5"><a href="#cb34-5" tabindex="-1"></a></span>
+<span id="cb34-6"><a href="#cb34-6" tabindex="-1"></a><span class="co">#Aplicar STL al objeto creado</span></span>
+<span id="cb34-7"><a href="#cb34-7" tabindex="-1"></a>close_stl <span class="ot">&lt;-</span> <span class="fu">stl</span>(close_ts, <span class="at">s.window =</span> <span class="st">&quot;periodic&quot;</span>)</span>
+<span id="cb34-8"><a href="#cb34-8" tabindex="-1"></a></span>
+<span id="cb34-9"><a href="#cb34-9" tabindex="-1"></a><span class="co">#Graficar</span></span>
+<span id="cb34-10"><a href="#cb34-10" tabindex="-1"></a><span class="fu">plot</span>(close_stl)</span></code></pre></div>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a><span class="co">#Se divide en componentes individuales para poder graficar individualmente</span></span>
+<span id="cb35-2"><a href="#cb35-2" tabindex="-1"></a>trend_comp     <span class="ot">&lt;-</span> close_stl<span class="sc">$</span>time.series[, <span class="st">&quot;trend&quot;</span>]</span>
+<span id="cb35-3"><a href="#cb35-3" tabindex="-1"></a>seasonal_comp  <span class="ot">&lt;-</span> close_stl<span class="sc">$</span>time.series[, <span class="st">&quot;seasonal&quot;</span>]</span>
+<span id="cb35-4"><a href="#cb35-4" tabindex="-1"></a>residual_comp  <span class="ot">&lt;-</span> close_stl<span class="sc">$</span>time.series[, <span class="st">&quot;remainder&quot;</span>]</span>
+<span id="cb35-5"><a href="#cb35-5" tabindex="-1"></a>observed_comp  <span class="ot">&lt;-</span> close_ts</span>
+<span id="cb35-6"><a href="#cb35-6" tabindex="-1"></a></span>
+<span id="cb35-7"><a href="#cb35-7" tabindex="-1"></a>stl_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb35-8"><a href="#cb35-8" tabindex="-1"></a>  <span class="at">Date =</span> MSFT<span class="sc">$</span>Date,</span>
+<span id="cb35-9"><a href="#cb35-9" tabindex="-1"></a>  <span class="at">Original =</span> <span class="fu">as.numeric</span>(observed_comp),</span>
+<span id="cb35-10"><a href="#cb35-10" tabindex="-1"></a>  <span class="at">Tendencia =</span> trend_comp,</span>
+<span id="cb35-11"><a href="#cb35-11" tabindex="-1"></a>  <span class="at">Estacionalidad =</span> seasonal_comp,</span>
+<span id="cb35-12"><a href="#cb35-12" tabindex="-1"></a>  <span class="at">Residual =</span> residual_comp</span>
+<span id="cb35-13"><a href="#cb35-13" tabindex="-1"></a>)</span>
+<span id="cb35-14"><a href="#cb35-14" tabindex="-1"></a></span>
+<span id="cb35-15"><a href="#cb35-15" tabindex="-1"></a><span class="co">#Linea original</span></span>
+<span id="cb35-16"><a href="#cb35-16" tabindex="-1"></a><span class="fu">ggplot</span>(stl_df, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Original)) <span class="sc">+</span></span>
+<span id="cb35-17"><a href="#cb35-17" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">&quot;steelblue&quot;</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb35-18"><a href="#cb35-18" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Serie Original — Precio de cierre (MSFT)&quot;</span>,</span>
+<span id="cb35-19"><a href="#cb35-19" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Fecha&quot;</span>,</span>
+<span id="cb35-20"><a href="#cb35-20" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Precio&quot;</span>) <span class="sc">+</span></span>
+<span id="cb35-21"><a href="#cb35-21" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-13-2.png" width="672" /></p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" tabindex="-1"></a><span class="co">#Tendencia</span></span>
+<span id="cb36-2"><a href="#cb36-2" tabindex="-1"></a><span class="fu">ggplot</span>(stl_df, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Tendencia)) <span class="sc">+</span></span>
+<span id="cb36-3"><a href="#cb36-3" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">&quot;seagreen&quot;</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb36-4"><a href="#cb36-4" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Componente Tendencia&quot;</span>,</span>
+<span id="cb36-5"><a href="#cb36-5" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Fecha&quot;</span>,</span>
+<span id="cb36-6"><a href="#cb36-6" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Tendencia&quot;</span>) <span class="sc">+</span></span>
+<span id="cb36-7"><a href="#cb36-7" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<pre><code>## Don&#39;t know how to automatically pick scale for object of type &lt;ts&gt;. Defaulting
+## to continuous.</code></pre>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-13-3.png" width="672" /></p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a><span class="co">#Estacionalidad</span></span>
+<span id="cb38-2"><a href="#cb38-2" tabindex="-1"></a><span class="fu">ggplot</span>(stl_df, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Estacionalidad)) <span class="sc">+</span></span>
+<span id="cb38-3"><a href="#cb38-3" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">&quot;darkorange&quot;</span>, <span class="at">linewidth =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
+<span id="cb38-4"><a href="#cb38-4" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Componente Estacional&quot;</span>,</span>
+<span id="cb38-5"><a href="#cb38-5" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Fecha&quot;</span>,</span>
+<span id="cb38-6"><a href="#cb38-6" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Estacionalidad&quot;</span>) <span class="sc">+</span></span>
+<span id="cb38-7"><a href="#cb38-7" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<pre><code>## Don&#39;t know how to automatically pick scale for object of type &lt;ts&gt;. Defaulting
+## to continuous.</code></pre>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-13-4.png" width="672" /></p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a><span class="co">#Residual</span></span>
+<span id="cb40-2"><a href="#cb40-2" tabindex="-1"></a><span class="fu">ggplot</span>(stl_df, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Residual)) <span class="sc">+</span></span>
+<span id="cb40-3"><a href="#cb40-3" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">&quot;purple&quot;</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb40-4"><a href="#cb40-4" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">linetype =</span> <span class="st">&quot;dashed&quot;</span>) <span class="sc">+</span></span>
+<span id="cb40-5"><a href="#cb40-5" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Componente Residual&quot;</span>,</span>
+<span id="cb40-6"><a href="#cb40-6" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Fecha&quot;</span>,</span>
+<span id="cb40-7"><a href="#cb40-7" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Residual&quot;</span>) <span class="sc">+</span></span>
+<span id="cb40-8"><a href="#cb40-8" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<pre><code>## Don&#39;t know how to automatically pick scale for object of type &lt;ts&gt;. Defaulting
+## to continuous.</code></pre>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-13-5.png" width="672" />
+Nuevamente se observa una tendencia claramente creciente de largo plazo, especialmente acelerada a partir de 2013–2015, con fuertes fluctuaciones recientes (mayor volatilidad desde 2020 en adelante). Por otro lado la componente de tendencia captura muy bien el crecimiento estructural del precio. Es suavemente creciente durante la primera década y luego muestra una pendiente mucho más pronunciada en los últimos años. Esto confirma que la serie de precios no es estacionaria, ya que la media cambia en el tiempo.</p>
+<p>La componente estacional muestra un patrón repetitivo estable en el tiempo, con oscilaciones regulares alrededor de cero. Sin embargo, su magnitud es pequeña en comparación con la tendencia y con los movimientos del precio total. Esto sugiere que existe una estacionalidad estadística (probablemente ligada a efectos calendario o patrones anuales), pero su impacto económico es limitado frente a la tendencia dominante. El componente irregular presenta mayor dispersión en los años recientes, lo que evidencia clustering de volatilidad. Los shocks son más grandes después de 2020.</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" tabindex="-1"></a><span class="fu">library</span>(forecast)</span></code></pre></div>
+<pre><code>## Warning: package &#39;forecast&#39; was built under R version 4.5.2</code></pre>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb44-2"><a href="#cb44-2" tabindex="-1"></a></span>
+<span id="cb44-3"><a href="#cb44-3" tabindex="-1"></a>close <span class="ot">&lt;-</span> MSFT<span class="sc">$</span>Close</span>
+<span id="cb44-4"><a href="#cb44-4" tabindex="-1"></a></span>
+<span id="cb44-5"><a href="#cb44-5" tabindex="-1"></a><span class="fu">ggAcf</span>(close, <span class="at">lag.max =</span> <span class="dv">60</span>) <span class="sc">+</span></span>
+<span id="cb44-6"><a href="#cb44-6" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;Autocorrelación (ACF) — MSFT Precio de Cierre&quot;</span>)</span></code></pre></div>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" tabindex="-1"></a><span class="fu">ggPacf</span>(close, <span class="at">lag.max =</span> <span class="dv">60</span>) <span class="sc">+</span></span>
+<span id="cb45-2"><a href="#cb45-2" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;Autocorrelación Parcial (PACF) — MSFT Precio de Cierre&quot;</span>)</span></code></pre></div>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-14-2.png" width="672" /></p>
+<p>Debido a que se puede observar que la serie presenta autocorrelaciones muy cercanas a 1, y se puede observar que el ACF decae lentamente, esto nos indica que la serie no es estacionaria, existiendo una tendencia fuerte a largo plazo, esto se apoya también en que existe un pico enorme en el rezago y el resto de rezagos son cercanos a 0.</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" tabindex="-1"></a>returns <span class="ot">&lt;-</span> MSFT<span class="sc">$</span>Return</span>
+<span id="cb46-2"><a href="#cb46-2" tabindex="-1"></a></span>
+<span id="cb46-3"><a href="#cb46-3" tabindex="-1"></a><span class="fu">ggAcf</span>(returns, <span class="at">lag.max =</span> <span class="dv">60</span>) <span class="sc">+</span></span>
+<span id="cb46-4"><a href="#cb46-4" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;Autocorrelación (ACF) — MSFT Retornos diarios&quot;</span>)</span></code></pre></div>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" tabindex="-1"></a><span class="fu">ggPacf</span>(returns, <span class="at">lag.max =</span> <span class="dv">60</span>) <span class="sc">+</span></span>
+<span id="cb47-2"><a href="#cb47-2" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;Autocorrelación Parcial (PACF) — Retornos diarios&quot;</span>)</span></code></pre></div>
+<p><img src="Bookdown_files/figure-html/unnamed-chunk-15-2.png" width="672" /></p>
+<p>El análisis de la función de autocorrelación (ACF) y la función de autocorrelación parcial (PACF) de los retornos diarios muestra que la mayoría de los coeficientes se encuentran muy cercanos a cero y dentro de las bandas de confianza, sin evidenciar un patrón sistemático ni un decaimiento progresivo en los rezagos. Aunque se observan algunos picos aislados, estos son pequeños y no sugieren una estructura autoregresiva clara. En conjunto, los resultados indican ausencia de dependencia lineal significativa en la media, consistente con un comportamiento cercano al ruido blanco y alineado con la Hipótesis de Mercado Eficiente en su forma débil, es decir, los retornos pasados no predicen bien a los futuros.</p>
 
+</div>
 </div>
 </div>
             </section>
@@ -257,7 +548,7 @@ div.csl-indent {
         </div>
       </div>
 
-<a href="hello-bookdown.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
